@@ -1,0 +1,93 @@
+.info-card-container {
+    padding: 0 8rem;
+    background: #fefefe;
+    color: #000;
+}
+
+.info-card-text {
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.info-cards-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+    transition: all 2s;
+}
+
+.card-container {
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+.card-content button {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.daily {
+    font-weight: bold;
+    background: #2183a2;
+    color: #fff;
+}
+
+.weekly {
+    font-weight: bold;
+    background: #ff9f43;
+    color: #fff;
+}
+
+.monthly {
+    font-weight: bold;
+    background: #3b3e6e;
+    color: #fff;
+}
+
+.yearly {
+    font-weight: bold;
+    background: #0b0b0b;
+    color: #fff;
+}
+
+.sticky-card-container {
+    height: 80vh;
+}
+
+.sticky-card {
+    position: sticky;
+    top: 10% !important;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 900px) {
+
+    .info-card-container {
+        padding: 0 4rem !important;
+    }
+
+    .info-cards-container {
+        display: block;
+    }
+
+    .sticky-card-container {
+        height: auto;
+    }
+
+    .sticky-card {
+        position: relative;
+    }
+}

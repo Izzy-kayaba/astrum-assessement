@@ -1,0 +1,94 @@
+.intro-container {
+    margin: 1.5rem auto;
+    padding: 8rem 4rem 0;
+}
+
+.intro-container h3 {
+    font-size: 2rem;
+}
+
+.intro-container h1 {
+    font-size: 4rem;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.intro-content:hover #intro-card-image {
+    top: -100% !important;
+    scale: 120%;
+}
+
+.intro-content-text {
+    flex: 1;
+    padding: 0 1rem;
+    font-size: 20px;
+    text-align: justify;
+    border-right: 2px solid #000;
+}
+
+.intro-content-card {
+    flex: 1;
+    padding: 1rem;
+    font-weight: bold;
+    line-height: 1.2rem;
+}
+
+.intro-card {
+    width: 100%;
+    background: transparent;
+    position: relative;
+    padding: 3rem 2rem;
+    transition: all 0.5s;
+}
+
+.intro-card:hover {
+    width: 95%;
+}
+
+#intro-card-image {
+    position: absolute;
+    width: 300px !important;
+    height: 250px !important;
+    top: -80% !important;
+    left: 50% !important;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .intro-content {
+        display: block;
+        transition: display 1s;
+    }
+
+    .intro-content-text {
+        border: none;
+        margin-bottom: 7rem;
+        transition: all 1s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .intro-container {
+        margin: 1rem auto;
+        padding: 4rem 2rem 0;
+    }
+
+    .intro-content-text {
+        margin-bottom: 3rem;
+        transition: all 1s;
+    }
+
+    #intro-card-image {
+        display: none;
+    }
+}

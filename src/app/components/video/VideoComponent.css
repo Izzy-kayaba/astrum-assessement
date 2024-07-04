@@ -1,0 +1,19 @@
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+video {
+    max-width: 100%;
+    transition: width 3s ease-in-out;
+}
+
+video:hover {
+    width: 1300px;
+}
